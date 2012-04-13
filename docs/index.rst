@@ -10,6 +10,7 @@ Contents:
 
 .. toctree::
    buildings
+   scenario
    :maxdepth: 2
 
 
