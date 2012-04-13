@@ -9,6 +9,7 @@ Welcome to Unknown Horizons's documentation!
 Contents:
 
 .. toctree::
+   buildings
    :maxdepth: 2
 
 
