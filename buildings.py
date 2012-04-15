@@ -13,8 +13,8 @@ ActionSetLoader._find_action_sets('content/')
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 
 global gh, used_res_ids
-#gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
-gh = 'file://localhost/{path}/'.format(path=os.path.abspath(sys.argv[1]))
+gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
+#gh = 'file://localhost/{path}/'.format(path=os.path.abspath(sys.argv[1]))
 used_res_ids = set()
 
 header = """
@@ -63,11 +63,28 @@ def generate_overview(buildings):
 			f.write(sphinx_section(level_name, "'"))
 			for b in buildings:
 				f.write(sphinx_section(b.name, '`'))
+				f.write('%s\n\n' % b.tooltip_text)
+				if hasattr(b, 'component_templates'):
+					produced_res = set()
+					for component in b.component_templates:
+						for k, v in component.iteritems():
+							if 'ProducerComponent' in k:
+								for _, line in component[k]['productionlines'].iteritems():
+									output = line.get('produces')
+									if output:
+										produced_res.add(output[0][0])
+										used_res_ids.add(output[0][0])
+								if produced_res:
+									f.write('Produces:\n')
+									for id in produced_res:
+										f.write('|r{id:03d}|\n'.format(id=id))
+									f.write('\n')
 				f.write(get_building_cost_list(b))
 				f.write('.. image:: %s\n\n' % get_image_url(b))
 		f.write('\n' * 3)
+
+		# create replace rules for all required resource icons
 		for id in used_res_ids:
-			# create replace rules for all required resource icons
 			f.write('.. |r{id:03d}| image:: {path}\n'.format(id=id, path=get_res_icon_path(id)))
 		f.write('.. |r-99| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/negative32.png'))
 		f.write('.. |r-98| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/zzz32.png'))
