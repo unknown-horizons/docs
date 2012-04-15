@@ -11,6 +11,9 @@ ActionSetLoader._find_action_sets('content/')
 
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 
+global gh, used_res_ids
+gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
+used_res_ids = set()
 
 header = """
 Buildings Overview
@@ -20,8 +23,6 @@ Buildings Overview
 
 
 def get_image_url(building):
-	gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
-
 	sets = ActionSetLoader.action_sets[building.action_sets.keys()[0]]
 	path = sets.get('idle', sets.get('idle_full'))
 	path = path[45].keys()[0]
@@ -32,6 +33,19 @@ def get_image_url(building):
 def sphinx_section(text, level):
 	return '%s\n%s\n' % (text, level * len(text))
 
+def get_res_icon_path(res_id):
+	return gh + 'content/gui/icons/resources/16/{id:03d}.png'.format(id=res_id)
+
+def get_building_cost_list(building):
+	for r in building.costs.iterkeys():
+		used_res_ids.add(r)
+	sep = ' '.join('======' for (_, _) in building.costs.iteritems()) + '\n'
+	ret  = sep
+	ret += ' '.join('|r%03d|' % r for (r, _) in building.costs.iteritems()) + '\n'
+	ret += sep
+	ret += ' '.join( '% 6d'  % a for (_, a) in building.costs.iteritems()) + '\n'
+	ret += sep
+	return ret + '\n'
 
 def generate_overview(buildings):
 	buildings = sorted(buildings, key=lambda b: b.settler_level)
@@ -43,7 +57,12 @@ def generate_overview(buildings):
 			f.write(sphinx_section(level_name, "'"))
 			for b in buildings:
 				f.write(sphinx_section(b.name, '`'))
-				f.write('.. image:: %s\n' % get_image_url(b))
+				f.write(get_building_cost_list(b))
+				f.write('.. image:: %s\n\n' % get_image_url(b))
+		f.write('\n' * 3)
+		for id in used_res_ids:
+			# create replace rules for all required resource icons
+			f.write('.. |r{id:03d}| image:: {path}\n'.format(id=id, path=get_res_icon_path(id)))
 
 
 def main():
