@@ -1,5 +1,6 @@
 import itertools
 import os
+import sys
 
 DOCS_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -12,7 +13,8 @@ ActionSetLoader._find_action_sets('content/')
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 
 global gh, used_res_ids
-gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
+#gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
+gh = 'file://localhost/{path}/'.format(path=os.path.abspath(sys.argv[1]))
 used_res_ids = set()
 
 header = """
@@ -34,16 +36,20 @@ def sphinx_section(text, level):
 	return '%s\n%s\n' % (text, level * len(text))
 
 def get_res_icon_path(res_id):
-	return gh + 'content/gui/icons/resources/16/{id:03d}.png'.format(id=res_id)
+	return gh + 'content/gui/icons/resources/32/{id:03d}.png'.format(id=res_id)
 
 def get_building_cost_list(building):
 	for r in building.costs.iterkeys():
 		used_res_ids.add(r)
-	sep = ' '.join('======' for (_, _) in building.costs.iteritems()) + '\n'
+	building.costs[-99] = building.running_costs or 0
+	building.costs[-98] = building.running_costs_inactive or 0
+	building.costs[980] = building.size[0]
+	building.costs[981] = building.size[1]
+	sep  = '+' + '+'.join('--------' for (_, _) in building.costs.iteritems()) + '+\n'
 	ret  = sep
-	ret += ' '.join('|r%03d|' % r for (r, _) in building.costs.iteritems()) + '\n'
+	ret += '| ' + ' | '.join('|r%03d|' % r for (r, _) in sorted(building.costs.items())) + ' |\n'
 	ret += sep
-	ret += ' '.join( '% 6d'  % a for (_, a) in building.costs.iteritems()) + '\n'
+	ret += '| ' + ' | '.join( '%6d'  % a for (_, a) in sorted(building.costs.items())) + ' |\n'
 	ret += sep
 	return ret + '\n'
 
@@ -63,6 +69,10 @@ def generate_overview(buildings):
 		for id in used_res_ids:
 			# create replace rules for all required resource icons
 			f.write('.. |r{id:03d}| image:: {path}\n'.format(id=id, path=get_res_icon_path(id)))
+		f.write('.. |r-99| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/negative32.png'))
+		f.write('.. |r-98| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/zzz32.png'))
+		f.write('.. |r980| replace:: x\n')
+		f.write('.. |r981| replace:: y\n')
 
 
 def main():
