@@ -13,7 +13,7 @@ ActionSetLoader._find_action_sets('content/')
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 
 global gh, used_res_ids
-gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
+gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/development/'
 #gh = 'file://localhost/{path}/'.format(path=os.path.abspath(sys.argv[1]))
 used_res_ids = set()
 
