@@ -29,7 +29,10 @@ def get_args(func):
 
 	result = ', '.join(args[1:])
 	if varargs:
-		result += ', *%s ' % varargs
+		if result:
+			result += ', \*%s ' % varargs
+		else:
+			result = '\*%s' % varargs
 
 	return result
 
@@ -39,12 +42,12 @@ def generate():
 		f.write(sphinx_section('Scenario', '='))
 
 		f.write(sphinx_section('Actions', '-'))
-		for name, func in ACTIONS.registry.items():
+		for name, func in sorted(ACTIONS.registry.items()):
 			f.write('.. function:: %s(%s)\n\n' % (name, get_args(func)))
 			f.write('%s\n\n' % fix_doc(func.__doc__))
 
 		f.write(sphinx_section('Conditions', '-'))
-		for name, func in CONDITIONS.registry.items():
+		for name, func in sorted(CONDITIONS.registry.items()):
 			f.write('.. function:: %s(%s)\n\n' % (name, get_args(func)))
 			f.write('%s\n\n' % fix_doc(func.__doc__))
 
