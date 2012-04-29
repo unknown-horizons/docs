@@ -133,7 +133,7 @@ Increases the player's sight.
 | |b013| | +--------+--------+--------+--------+--------+--------+ |
 |        | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
 |        | +--------+--------+--------+--------+--------+--------+ |
-|        | |      0 |      0 |    100 |      4 |      1 |      1 | |
+|        | |      0 |      0 |     50 |      2 |      1 |      1 | |
 |        | +--------+--------+--------+--------+--------+--------+ |
 +--------+---------------------------------------------------------+
 
@@ -348,18 +348,6 @@ Extinguishes fires.
 |        | +--------+--------+--------+--------+--------+--------+--------+--------+ |
 +--------+---------------------------------------------------------------------------+
 
-Barracks
-````````
-Recruits units suitable for ground combat.
-
-+--------+------------------------------------------------+
-| |b053| | +--------+--------+--------+--------+--------+ |
-|        | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
-|        | +--------+--------+--------+--------+--------+ |
-|        | |     25 |     10 |      1 |      3 |      3 | |
-|        | +--------+--------+--------+--------+--------+ |
-+--------+------------------------------------------------+
-
 Settlers
 ''''''''
 Iron Mine
@@ -556,6 +544,18 @@ Produces condiments out of spices.
 |        |  |produces_b050|                               |
 +--------+------------------------------------------------+
 
+Barracks
+````````
+Recruits units suitable for ground combat.
+
++--------+---------------------------------------------------------------------------+
+| |b053| | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|        | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r007| | |r980| | |r981| | |
+|        | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|        | |     25 |     10 |   1000 |      6 |      4 |      8 |      3 |      3 | |
+|        | +--------+--------+--------+--------+--------+--------+--------+--------+ |
++--------+---------------------------------------------------------------------------+
+
 Stone Pit
 `````````
 Gets stone from a mountain.
@@ -691,60 +691,60 @@ Produces wine out of grapes.
 
 
 
-.. |b001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/warehouse/as_warehouse0/idle/45/0.png
-.. |b002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/storagetent/as_storagetent0/idle/45/0.png
-.. |b003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/residential/as_tent0/idle/45/0.png
-.. |b004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/mainsquare/as_mainsquare0/idle/45/0.png
-.. |b005| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/sunsail/as_sunsail0/idle/45/0.png
-.. |b006| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/signalfire/as_signalfire0/idle/45/8.png
-.. |b007| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/weaver/as_weaver0/idle/45/0.png
-.. |b008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/lumberjack/as_lumberjack0/idle/45/0.png
-.. |b009| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/hunter/as_hunter0/idle/45/0.png
-.. |b010| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/ruined_tent/as_ruined_tent0/idle/45/0.png
-.. |b011| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/fisherman/as_fisherman0/idle/45/0.png
-.. |b012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/boat_builder/as_boat_builder0/idle/45/0.png
-.. |b013| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/lookout/as_lookout0/idle/45/0.png
-.. |b015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/sailors/streets/as_trail/abd/45/0.png
-.. |b017| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/terrain/trees/as_tupelo2/idle_full/45/0.png
-.. |b018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/agricultural/as_pasture0/idle/45/0029.png
-.. |b019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/agricultural/as_potatofield0/idle_full/45/0.png
-.. |b020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/farm/as_farm0/idle/45/0.png
-.. |b021| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/school/as_school0/idle/45/0.png
-.. |b022| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/agricultural/as_sugarfield0/idle_full/45/0.png
-.. |b023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/terrain/resources/as_clay0/idle/45/1.png
-.. |b024| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/brickyard/as_brickyard0/idle_full/45/0.png
-.. |b025| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/clay_pit/as_clay_pit0/idle/45/0.png
-.. |b026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/distillery/as_distillery0/idle/45/0.png
-.. |b028| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/terrain/mountains/as_mine5x5/idle/45/0.png
-.. |b029| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/smeltery/as_smeltery0/idle/45/0.png
-.. |b030| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/toolmaker/as_toolmaker0/idle/45/0.png
-.. |b031| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/charcoal_burning/as_charcoal_burning0/idle_full/45/0.png
-.. |b032| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/tavern/as_tavern0/idle/45/0.png
-.. |b033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/terrain/resources/as_fish0/idle/45/019.png
-.. |b034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/terrain/mountains/as_mountain5x5/idle/45/0.png
-.. |b035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/salt_ponds/as_saltponds0/idle_full/45/0.png
-.. |b036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/agricultural/as_tobaccofield0/idle_full/45/0.png
-.. |b037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/tobacconist/as_tobacconist0/idle/45/0.png
-.. |b038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/agricultural/as_cattlerun0/idle/45/0.png
-.. |b039| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/agricultural/as_pigsty0/idle/45/0.png
-.. |b040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/agricultural/as_herbary0/idle/45/0.png
-.. |b041| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/butchery/as_butchery0/idle/45/0.png
-.. |b042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/doctor/as_doctor0/idle/45/0.png
-.. |b044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/tower_wooden/as_woodentower0/idle/45/0.png
-.. |b045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/pioneers/fireservice/as_fireservice0/idle/45/0.png
-.. |b046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/citizens/as_cornfield0/idle_full/45/0.png
-.. |b047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/citizens/as_windmill0/idle_full/45/00.png
-.. |b048| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/citizens/as_bakery0/idle/45/0.png
-.. |b049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
-.. |b053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/0.png
-.. |b054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
-.. |b060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b061| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
-.. |b065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/warehouse/as_warehouse0/idle/45/0.png
+.. |b002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/storagetent/as_storagetent0/idle/45/0.png
+.. |b003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/residential/as_tent0/idle/45/0.png
+.. |b004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/mainsquare/as_mainsquare0/idle/45/0.png
+.. |b005| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/sunsail/as_sunsail0/idle/45/0.png
+.. |b006| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/signalfire/as_signalfire0/idle/45/8.png
+.. |b007| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/weaver/as_weaver0/idle/45/0.png
+.. |b008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/lumberjack/as_lumberjack0/idle/45/0.png
+.. |b009| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/hunter/as_hunter0/idle/45/0.png
+.. |b010| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/ruined_tent/as_ruined_tent0/idle/45/0.png
+.. |b011| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/fisherman/as_fisherman0/idle/45/0.png
+.. |b012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/boat_builder/as_boat_builder0/idle/45/0.png
+.. |b013| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/lookout/as_lookout0/idle/45/0.png
+.. |b015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/streets/as_trail/abd/45/0.png
+.. |b017| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/trees/as_tupelo2/idle_full/45/0.png
+.. |b018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_pasture0/idle/45/0029.png
+.. |b019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_potatofield0/idle_full/45/0.png
+.. |b020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/farm/as_farm0/idle/45/0.png
+.. |b021| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/school/as_school0/idle/45/0.png
+.. |b022| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_sugarfield0/idle_full/45/0.png
+.. |b023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_clay0/idle/45/1.png
+.. |b024| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/brickyard/as_brickyard0/idle_full/45/0.png
+.. |b025| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/clay_pit/as_clay_pit0/idle/45/0.png
+.. |b026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/distillery/as_distillery0/idle/45/0.png
+.. |b028| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/mountains/as_mine5x5/idle/45/0.png
+.. |b029| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/smeltery/as_smeltery0/idle/45/0.png
+.. |b030| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/toolmaker/as_toolmaker0/idle/45/0.png
+.. |b031| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/charcoal_burning/as_charcoal_burning0/idle_full/45/0.png
+.. |b032| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/tavern/as_tavern0/idle/45/0.png
+.. |b033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_fish0/idle/45/019.png
+.. |b034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/mountains/as_mountain5x5/idle/45/0.png
+.. |b035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/salt_ponds/as_saltponds0/idle_full/45/0.png
+.. |b036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_tobaccofield0/idle_full/45/0.png
+.. |b037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/tobacconist/as_tobacconist0/idle/45/0.png
+.. |b038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_cattlerun0/idle/45/0.png
+.. |b039| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_pigsty0/idle/45/0.png
+.. |b040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_herbary0/idle/45/0.png
+.. |b041| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/butchery/as_butchery0/idle/45/0.png
+.. |b042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/doctor/as_doctor0/idle/45/0.png
+.. |b044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/tower_wooden/as_woodentower0/idle/45/0.png
+.. |b045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/fireservice/as_fireservice0/idle/45/0.png
+.. |b046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cornfield0/idle_full/45/0.png
+.. |b047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_windmill0/idle_full/45/00.png
+.. |b048| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_bakery0/idle/45/0.png
+.. |b049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/0.png
+.. |b054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b061| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
 .. |produces_b001| replace::
                              Produces:
                              |r019|
@@ -880,56 +880,56 @@ Produces wine out of grapes.
 .. |produces_b065| replace::
                              Produces:
                              |r022|
-.. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/zzz32.png
-.. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/negative32.png
-.. |r001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/001.png
-.. |r002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/002.png
-.. |r003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/003.png
-.. |r004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/004.png
-.. |r005| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/005.png
-.. |r006| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/006.png
-.. |r007| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/007.png
-.. |r008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/008.png
-.. |r010| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/010.png
-.. |r011| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/011.png
-.. |r012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/012.png
-.. |r014| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/014.png
-.. |r015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/015.png
-.. |r016| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/016.png
-.. |r017| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/017.png
-.. |r018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/018.png
-.. |r019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/019.png
-.. |r021| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/021.png
-.. |r022| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/022.png
-.. |r023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/023.png
-.. |r025| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/025.png
-.. |r026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/026.png
-.. |r027| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/027.png
-.. |r028| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/028.png
-.. |r029| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/029.png
-.. |r030| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/030.png
-.. |r031| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/031.png
-.. |r032| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/032.png
-.. |r033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/033.png
-.. |r034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/034.png
-.. |r035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/035.png
-.. |r036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/036.png
-.. |r037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/037.png
-.. |r038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/038.png
-.. |r040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/040.png
-.. |r042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/042.png
-.. |r043| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/043.png
-.. |r044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/044.png
-.. |r045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/045.png
-.. |r046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/046.png
-.. |r047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/047.png
-.. |r052| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/052.png
-.. |r053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/053.png
-.. |r054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/054.png
-.. |r055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/055.png
-.. |r057| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/057.png
-.. |r058| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/058.png
-.. |r059| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/059.png
-.. |r060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/development/content/gui/icons/resources/32/060.png
+.. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/zzz32.png
+.. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/negative32.png
+.. |r001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/001.png
+.. |r002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/002.png
+.. |r003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/003.png
+.. |r004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/004.png
+.. |r005| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/005.png
+.. |r006| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/006.png
+.. |r007| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/007.png
+.. |r008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/008.png
+.. |r010| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/010.png
+.. |r011| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/011.png
+.. |r012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/012.png
+.. |r014| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/014.png
+.. |r015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/015.png
+.. |r016| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/016.png
+.. |r017| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/017.png
+.. |r018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/018.png
+.. |r019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/019.png
+.. |r021| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/021.png
+.. |r022| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/022.png
+.. |r023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/023.png
+.. |r025| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/025.png
+.. |r026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/026.png
+.. |r027| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/027.png
+.. |r028| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/028.png
+.. |r029| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/029.png
+.. |r030| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/030.png
+.. |r031| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/031.png
+.. |r032| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/032.png
+.. |r033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/033.png
+.. |r034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/034.png
+.. |r035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/035.png
+.. |r036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/036.png
+.. |r037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/037.png
+.. |r038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/038.png
+.. |r040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/040.png
+.. |r042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/042.png
+.. |r043| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/043.png
+.. |r044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/044.png
+.. |r045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/045.png
+.. |r046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/046.png
+.. |r047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/047.png
+.. |r052| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/052.png
+.. |r053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/053.png
+.. |r054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/054.png
+.. |r055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/055.png
+.. |r057| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/057.png
+.. |r058| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/058.png
+.. |r059| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/059.png
+.. |r060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/060.png
 .. |r980| replace:: x
 .. |r981| replace:: y
