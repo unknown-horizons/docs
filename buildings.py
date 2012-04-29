@@ -13,7 +13,7 @@ ActionSetLoader._find_action_sets('content/')
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 
 global gh, used_res_ids
-gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/development/'
+gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
 #gh = 'file://localhost/{path}/'.format(path=os.path.abspath(sys.argv[1]))
 used_res_ids = set()
 footer = set()
@@ -29,7 +29,7 @@ def get_image_url(building):
 	fallback = 'idle'
 	if building.id in (15, 43): # paths have different action set names
 		fallback = 'abd'
-	sets = ActionSetLoader.action_sets[building.action_sets.keys()[0]]
+	sets = ActionSetLoader.action_sets[building.action_sets.values()[0].keys()[0]]
 	path = sets.get('idle_full', sets.get(fallback))
 	path = path[45].keys()[0]
 	line = '.. |b{id:03d}| image:: {path}\n'.format(id=building.id, path=gh+path)
@@ -90,7 +90,7 @@ def get_production_output(building):
 							produced_res.add(output[0][0])
 							used_res_ids.add(output[0][0])
 					if produced_res:
-						ret      += '.. |produces_b{bid:03d}| replace:: \n'.format(bid=building.id)
+						ret      += '.. |produces_b{bid:03d}| replace::\n'.format(bid=building.id)
 						ret      += ' '*29 + 'Produces:\n'
 						for id in produced_res:
 							ret += ' '*29 + '|r{id:03d}|\n'.format(id=id)
