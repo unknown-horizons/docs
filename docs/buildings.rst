@@ -1046,9 +1046,7 @@ Produces wine out of grapes.
 .. |produces_b065| replace::
                              Produces:
                              |r022|
-.. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/-98.png
 .. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/zzz32.png
-.. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/-99.png
 .. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/negative32.png
 .. |r001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/001.png
 .. |r002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/002.png
@@ -1099,9 +1097,7 @@ Produces wine out of grapes.
 .. |r058| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/058.png
 .. |r059| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/059.png
 .. |r060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/060.png
-.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/1000001.png
-.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/1000020.png
-.. |r980| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/980.png
+.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/unit_thumbnails/1000001.png
+.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/unit_thumbnails/1000020.png
 .. |r980| replace:: x
-.. |r981| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/981.png
 .. |r981| replace:: y
