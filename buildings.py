@@ -6,12 +6,16 @@ import sys
 DOCS_PATH = os.path.dirname(os.path.abspath(__file__))
 
 from init import db
+from horizons.constants import UNITS
 from horizons.entities import Entities
 from horizons.util.loaders.actionsetloader import ActionSetLoader
 
 ActionSetLoader._find_action_sets('content/')
 
 settler_names = dict(db('SELECT level, name FROM settler_level'))
+unit_sets = dict((u.id, u.action_sets) for u in Entities.units.itervalues())
+SHIP_THUMBNAIL = 'content/gui/icons/unit_thumbnails/{type_id}.png'
+RES_PATH = 'content/gui/icons/resources/32/{id:03d}.png'
 
 global gh, used_res_ids
 gh = 'https://github.com/unknown-horizons/unknown-horizons/raw/master/'
@@ -45,7 +49,11 @@ def sphinx_section(text, level):
 	return '%s\n%s\n' % (text, level * len(text))
 
 def get_res_icon_path(res_id):
-	return gh + 'content/gui/icons/resources/32/{id:03d}.png'.format(id=res_id)
+	if res_id >= UNITS.DIFFERENCE_BUILDING_UNIT_ID: # produced resource is a unit in disguise
+		return gh + SHIP_THUMBNAIL.format(type_id=res_id)
+	elif res_id < 0 or res_id > 900:
+		return # no resource but still present in building property table (e.g. x, y size)
+	return gh + RES_PATH.format(id=res_id)
 
 def get_building_name(b, tier):
 	if hasattr(b, '_level_specific_names'):
@@ -127,7 +135,10 @@ def generate_overview(buildings):
 
 		# create replace rules for all required resource icons
 		for id in used_res_ids:
-			footer.add('.. |r{id:03d}| image:: {path}\n'.format(id=id, path=get_res_icon_path(id)))
+			icon_path = get_res_icon_path(id)
+			if icon_path is None:
+				continue
+			footer.add('.. |r{id:03d}| image:: {path}\n'.format(id=id, path=icon_path))
 		footer.add('.. |r-99| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/negative32.png'))
 		footer.add('.. |r-98| image:: {path}\n'.format(path=gh+'content/gui/icons/resources/zzz32.png'))
 		footer.add('.. |r980| replace:: x\n')
