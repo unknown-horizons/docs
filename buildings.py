@@ -1,4 +1,5 @@
 import itertools
+import operator
 import os
 import sys
 
@@ -25,16 +26,20 @@ Buildings Overview
 """.lstrip()
 
 
-def get_image_url(building):
+def get_image_url(building, tier=None):
 	fallback = 'idle'
 	if building.id in (15, 43): # paths have different action set names
 		fallback = 'abd'
-	sets = ActionSetLoader.action_sets[building.action_sets.values()[0].keys()[0]]
+	if tier is None:
+		tier = 0
+		sets = ActionSetLoader.action_sets[building.action_sets.values()[0].keys()[0]]
+	else:
+		sets = ActionSetLoader.action_sets[building.action_sets[tier].keys()[0]]
 	path = sets.get('idle_full', sets.get(fallback))
 	path = path[45].keys()[0]
-	line = '.. |b{id:03d}| image:: {path}\n'.format(id=building.id, path=gh+path)
+	line = '.. |b{tier:1d}x{id:03d}| image:: {path}\n'.format(tier=tier, id=building.id, path=gh+path)
 	footer.add(line)
-	return '|b{id:03d}|'.format(id=building.id)
+	return '|b{tier:1d}x{id:03d}|'.format(tier=tier, id=building.id)
 
 def sphinx_section(text, level):
 	return '%s\n%s\n' % (text, level * len(text))
@@ -42,18 +47,24 @@ def sphinx_section(text, level):
 def get_res_icon_path(res_id):
 	return gh + 'content/gui/icons/resources/32/{id:03d}.png'.format(id=res_id)
 
-def get_building_table(b):
-	ret  = sphinx_section(b.name, '`')
+def get_building_name(b, tier):
+	if hasattr(b, '_level_specific_names'):
+		return b._level_specific_names.get(tier, b._level_specific_names.keys()[0])
+	else:
+		return b.name
+
+def get_building_table(b, tier):
+	ret  = sphinx_section(get_building_name(b, tier), '`')
 	ret += b.tooltip_text + '\n\n' if b.tooltip_text else ''
 	costs = get_building_cost_list(b)
-	table_border = '+--------+-' + '-' * len(costs[0]) + '-+\n'
+	table_border = '+----------+-' + '-' * len(costs[0]) + '-+\n'
 	ret += table_border
-	ret += '| ' + get_image_url(b) + ' | ' + costs[0] + ' |\n'
+	ret += '| ' + get_image_url(b, tier) + ' | ' + costs[0] + ' |\n'
 	for line in costs[1:]:
-		ret += '|        | ' + line + ' |\n'
+		ret += '|          | ' + line + ' |\n'
 	production = get_production_output(b)
 	if production:
-		ret += '|        | ' + ' '+production + ' ' * (len(costs[0]) - 16) + ' |\n'
+		ret += '|          | ' + ' '+production + ' ' * (len(costs[0]) - 16) + ' |\n'
 	# 16 is the length of the string ' |produces_b???|'. the additional space is required because
 	# else the table would try to use the | replacement operator as alignment and thus break syntax.
 
@@ -99,15 +110,19 @@ def get_production_output(building):
 		return '|produces_b{bid:03d}|'.format(bid=building.id)
 
 def generate_overview(buildings):
-	buildings = sorted(buildings, key=lambda b: b.settler_level)
+	# Insert new pseudo-buildings for each tier upgrade to show all graphics.
+	# (Trail, SAILORS) will also spawn (Trail, PIONEERS) and so on.
+	# The correct name, if available, is then written during table generation.
+	buildings = [(b, tier) for b in buildings for tier in b.action_sets.keys()]
+	buildings.sort(key=operator.itemgetter(1))
 
 	with open(os.path.join(DOCS_PATH, 'docs/buildings.rst'), 'w') as f:
 		f.write(header)
-		for level, buildings in itertools.groupby(buildings, key=lambda b: b.settler_level):
+		for level, buildings in itertools.groupby(buildings, key=operator.itemgetter(1)):
 			level_name = settler_names[level]
 			f.write(sphinx_section(level_name, "'"))
-			for b in buildings:
-				f.write(get_building_table(b))
+			for b, tier in buildings:
+				f.write(get_building_table(b, tier))
 		f.write('\n' * 3)
 
 		# create replace rules for all required resource icons
