@@ -5,7 +5,11 @@ Set up paths and stuff so we can import from horizons.
 import os
 import sys
 
-os.chdir(sys.argv[1])
+if len(sys.argv) > 1:
+	uh_dir = sys.argv[1]
+else:
+	uh_dir = '../unknown-horizons'
+os.chdir(uh_dir)
 sys.path.insert(0, '.')
 
 from run_tests import mock_fife_and_gui
