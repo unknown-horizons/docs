@@ -1097,7 +1097,7 @@ Produces wine out of grapes.
 .. |r058| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/058.png
 .. |r059| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/059.png
 .. |r060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/060.png
-.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/unit_thumbnails/1000001.png
-.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/unit_thumbnails/1000020.png
+.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000001.png
+.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000020.png
 .. |r980| replace:: x
 .. |r981| replace:: y
