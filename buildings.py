@@ -14,7 +14,7 @@ ActionSetLoader._find_action_sets('content/')
 
 settler_names = dict(db('SELECT level, name FROM settler_level'))
 unit_sets = dict((u.id, u.action_sets) for u in Entities.units.itervalues())
-SHIP_THUMBNAIL = 'content/gui/icons/unit_thumbnails/{type_id}.png'
+SHIP_THUMBNAIL = 'content/gui/icons/units/thumbnails/{type_id}.png'
 RES_PATH = 'content/gui/icons/resources/32/{id:03d}.png'
 
 global gh, used_res_ids
