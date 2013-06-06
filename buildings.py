@@ -62,8 +62,11 @@ def get_building_name(b, tier):
 		return b.name
 
 def get_building_table(b, tier):
-	ret  = sphinx_section(get_building_name(b, tier), '`')
-	ret += b.tooltip_text + '\n\n' if b.tooltip_text else ''
+	ret = sphinx_section(get_building_name(b, tier), '`')
+	if b.tooltip_text:
+		if b.tooltip_text.startswith('_ '):
+			b.tooltip_text = b.tooltip_text[2:]
+		ret += b.tooltip_text + '\n\n'
 	costs = get_building_cost_list(b)
 	table_border = '+----------+-' + '-' * len(costs[0]) + '-+\n'
 	ret += table_border
@@ -150,8 +153,6 @@ def generate_overview(buildings):
 def main():
 	data = []
 	for b in Entities.buildings.itervalues():
-		if b.id == 43: # gravel path has no action set assigned
-			continue
 		data.append(b)
 
 	generate_overview(data)

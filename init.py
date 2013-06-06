@@ -12,11 +12,11 @@ else:
 os.chdir(uh_dir)
 sys.path.insert(0, '.')
 
-from run_tests import mock_fife_and_gui
+from run_tests import mock_fife
 from run_uh import init_environment
 
-mock_fife_and_gui()
-init_environment()
+mock_fife()
+init_environment(True)
 
 import horizons.main
 db = horizons.main._create_main_db()
