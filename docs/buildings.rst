@@ -41,7 +41,7 @@ Houses your inhabitants.
 
 Main Square
 ```````````
-Supplies citizens with goods.
+Supplies citizens with goods. Provides community.
 
 +----------+---------------------------------------------------------+
 | |b0x004| | +--------+--------+--------+--------+--------+--------+ |
@@ -157,7 +157,7 @@ Provides lumber. Chopped down by lumberjacks.
 | |b0x017| | +--------+--------+--------+--------+--------+ |
 |          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
 |          | +--------+--------+--------+--------+--------+ |
-|          | |      0 |      0 |     10 |      1 |      1 | |
+|          | |      0 |      0 |     50 |      1 |      1 | |
 |          | +--------+--------+--------+--------+--------+ |
 |          |  |produces_b017|                               |
 +----------+------------------------------------------------+
@@ -222,7 +222,7 @@ Houses your inhabitants.
 
 Main Square
 ```````````
-Supplies citizens with goods.
+Supplies citizens with goods. Provides community.
 
 +----------+---------------------------------------------------------+
 | |b1x004| | +--------+--------+--------+--------+--------+--------+ |
@@ -438,6 +438,17 @@ Extinguishes fires.
 
 Settlers
 ''''''''
+Warehouse
+`````````
++----------+---------------------------------------------------------+
+| |b2x001| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      0 |      0 |   1000 |     12 |      3 |      3 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b001|                                        |
++----------+---------------------------------------------------------+
+
 House
 `````
 Houses your inhabitants.
@@ -453,7 +464,7 @@ Houses your inhabitants.
 
 Main Square
 ```````````
-Supplies citizens with goods.
+Supplies citizens with goods. Provides community.
 
 +----------+---------------------------------------------------------+
 | |b2x004| | +--------+--------+--------+--------+--------+--------+ |
@@ -712,7 +723,7 @@ Houses your inhabitants.
 
 Main Square
 ```````````
-Supplies citizens with goods.
+Supplies citizens with goods. Provides community.
 
 +----------+---------------------------------------------------------+
 | |b3x004| | +--------+--------+--------+--------+--------+--------+ |
@@ -751,27 +762,27 @@ Windmill
 ````````
 Grinds corn into flour.
 
-+----------+------------------------------------------------+
-| |b3x047| | +--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+ |
-|          | |     10 |      0 |      1 |      2 |      2 | |
-|          | +--------+--------+--------+--------+--------+ |
-|          |  |produces_b047|                               |
-+----------+------------------------------------------------+
++----------+------------------------------------------------------------------+
+| |b3x047| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     10 |      0 |    400 |      4 |      5 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b047|                                                 |
++----------+------------------------------------------------------------------+
 
 Bakery
 ``````
 Consumes flour. Produces food.
 
-+----------+------------------------------------------------+
-| |b3x048| | +--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+ |
-|          | |     20 |      5 |      1 |      2 |      2 | |
-|          | +--------+--------+--------+--------+--------+ |
-|          |  |produces_b048|                               |
-+----------+------------------------------------------------+
++----------+------------------------------------------------------------------+
+| |b3x048| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     20 |      5 |    500 |      2 |      3 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b048|                                                 |
++----------+------------------------------------------------------------------+
 
 Cocoa Field
 ```````````
@@ -852,7 +863,7 @@ Produces wine out of grapes.
 .. |b0x010| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/ruined_tent/as_ruined_tent0/idle/45/0.png
 .. |b0x011| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/fisherman/as_fisherman0/idle/45/0.png
 .. |b0x013| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/lookout/as_lookout0/idle/45/0.png
-.. |b0x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/streets/as_trail/abd/45/0.png
+.. |b0x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/streets/as_trail/abc/135/0.png
 .. |b0x017| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/trees/as_tupelo2/idle_full/45/0.png
 .. |b0x023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_clay0/idle/45/1.png
 .. |b0x033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_fish0/idle/45/019.png
@@ -865,7 +876,7 @@ Produces wine out of grapes.
 .. |b1x007| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/weaver/as_weaver0/idle/45/0.png
 .. |b1x008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/lumberjack_barrack/as_lumberjack_barrack0/idle/45/0.png
 .. |b1x012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/boat_builder/as_boat_builder0/idle/45/0.png
-.. |b1x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/streets/as_gravel_path/abd/45/0.png
+.. |b1x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/streets/as_gravel_path/abc/135/0.png
 .. |b1x018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_pasture0/idle/45/0029.png
 .. |b1x019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_potatofield0/idle_full/45/0.png
 .. |b1x020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/farm/as_farm0/idle/45/0.png
@@ -876,6 +887,7 @@ Produces wine out of grapes.
 .. |b1x026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/distillery/as_distillery0/idle/45/0.png
 .. |b1x044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/tower_wooden/as_woodentower0/idle/45/0.png
 .. |b1x045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/fireservice/as_fireservice0/idle/45/0.png
+.. |b2x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/warehouse/as_warehouse_settler0/idle/45/0.png
 .. |b2x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/residential/as_house0/idle/45/0.png
 .. |b2x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/mainsquare/as_mainsquare_timberframed0/idle/45/0.png
 .. |b2x028| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/mountains/as_mine5x5/idle/45/0.png
@@ -896,9 +908,9 @@ Produces wine out of grapes.
 .. |b2x053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/0.png
 .. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
 .. |b2x055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
-.. |b3x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/residential/as_stonehouse0/idle/45/0.png
+.. |b3x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/residential/as_stonehouse1/idle/45/0.png
 .. |b3x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/mainsquare/as_mainsquare_stone0/idle/45/0.png
-.. |b3x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/streets/as_stone_path/abd/45/0.png
+.. |b3x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/streets/as_stone_path/abc/135/0.png
 .. |b3x046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cornfield0/idle_full/45/0.png
 .. |b3x047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_windmill0/idle_full/45/00.png
 .. |b3x048| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_bakery0/idle/45/0.png
