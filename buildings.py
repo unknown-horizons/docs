@@ -6,7 +6,7 @@ import sys
 DOCS_PATH = os.path.dirname(os.path.abspath(__file__))
 
 from init import db
-from horizons.constants import UNITS
+from horizons.constants import TIER, UNITS
 from horizons.entities import Entities
 from horizons.util.loaders.actionsetloader import ActionSetLoader
 
@@ -29,6 +29,8 @@ Buildings Overview
 
 """.lstrip()
 
+all_sets = ActionSetLoader.action_sets
+
 
 def get_image_url(building, tier=None):
 	fallback = 'idle'
@@ -36,9 +38,14 @@ def get_image_url(building, tier=None):
 		fallback = 'abd'
 	if tier is None:
 		tier = 0
-		sets = ActionSetLoader.action_sets[building.action_sets.values()[0].keys()[0]]
+		sets = all_sets[building.action_sets.values()[0].keys()[0]]
 	else:
-		sets = ActionSetLoader.action_sets[building.action_sets[tier].keys()[0]]
+		building_sets = building.action_sets[tier].keys()
+		sets = all_sets[building_sets[0]]
+		if building.id == 3 and tier == TIER.CITIZENS:
+			# Overwrite since first image has weight 0
+			sets = all_sets[building_sets[1]]
+
 	path = sets.get('idle_full', sets.get(fallback))
 	path = path[45].keys()[0]
 	line = '.. |b{tier:1d}x{id:03d}| image:: {path}\n'.format(tier=tier, id=building.id, path=gh+path)
