@@ -6,7 +6,7 @@ import sys
 DOCS_PATH = os.path.dirname(os.path.abspath(__file__))
 
 from init import db
-from horizons.constants import TIER, UNITS
+from horizons.constants import BUILDINGS, TIER, UNITS
 from horizons.entities import Entities
 from horizons.util.loaders.actionsetloader import ActionSetLoader
 
@@ -160,6 +160,9 @@ def generate_overview(buildings):
 def main():
 	data = []
 	for b in Entities.buildings.itervalues():
+		# Hide removed buildings
+		if b.id in (BUILDINGS.PIGSTY, ):
+			continue
 		data.append(b)
 
 	generate_overview(data)
