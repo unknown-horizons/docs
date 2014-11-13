@@ -591,19 +591,6 @@ Raises cattle. Needs a farm.
 |          |  |produces_b038|                                        |
 +----------+---------------------------------------------------------+
 
-Pigsty
-``````
-Raises pigs. Needs a farm.
-
-+----------+---------------------------------------------------------+
-| |b2x039| | +--------+--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-|          | |      0 |      0 |    200 |      2 |      5 |      5 | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-|          |  |produces_b039|                                        |
-+----------+---------------------------------------------------------+
-
 Herbary
 ```````
 Produces herbs. Needs a farm.
@@ -912,7 +899,6 @@ Produces wine out of grapes.
 .. |b2x036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_tobaccofield0/idle_full/45/0.png
 .. |b2x037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/tobacconist/as_tobacconist0/idle/45/0.png
 .. |b2x038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_cattlerun0/idle/45/0.png
-.. |b2x039| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_pigsty0/idle/45/0.png
 .. |b2x040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_herbary0/idle_full/45/004.png
 .. |b2x041| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/butchery/as_butchery0/idle/45/0.png
 .. |b2x042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/doctor/as_doctor0/idle/45/000.png
@@ -1027,9 +1013,6 @@ Produces wine out of grapes.
 .. |produces_b038| replace::
                              Produces:
                              |r033|
-.. |produces_b039| replace::
-                             Produces:
-                             |r034|
 .. |produces_b040| replace::
                              Produces:
                              |r037|
@@ -1106,7 +1089,6 @@ Produces wine out of grapes.
 .. |r031| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/031.png
 .. |r032| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/032.png
 .. |r033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/033.png
-.. |r034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/034.png
 .. |r035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/035.png
 .. |r036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/036.png
 .. |r037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/037.png
