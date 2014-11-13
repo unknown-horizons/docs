@@ -44,12 +44,12 @@ def generate():
 		f.write(sphinx_section('Actions', '-'))
 		for name, func in sorted(ACTIONS.registry.items()):
 			f.write('.. function:: %s(%s)\n\n' % (name, get_args(func)))
-			f.write('%s\n\n' % fix_doc(func.__doc__))
+			f.write('%s\n\n' % fix_doc(func.__doc__.strip()))
 
 		f.write(sphinx_section('Conditions', '-'))
 		for name, func in sorted(CONDITIONS.registry.items()):
 			f.write('.. function:: %s(%s)\n\n' % (name, get_args(func)))
-			f.write('%s\n\n' % fix_doc(func.__doc__))
+			f.write('%s\n\n' % fix_doc(func.__doc__.strip()))
 
 
 if __name__ == '__main__':
