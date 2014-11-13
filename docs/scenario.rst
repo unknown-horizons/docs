@@ -2,61 +2,70 @@ Scenario
 ========
 Actions
 -------
+.. function:: alter_inventory(resource, amount)
+
+   Alters the inventory of each settlement.
+
+.. function:: change_increment(tier)
+
+   Changes the tier of the settlements.
+
 .. function:: db_message(database_message_id)
 
-   Shows the predefined text of the message with ID *database_message_id*
-   in the messagewidget. Displayed text is translated.
+   Shows a message with predefined text in the messagewidget.
 
 .. function:: goal_reached(goal_number)
 
-   The player reaches the goal with ID *goal_number* in the current scenario.
+   The player reaches a certain goal in the current scenario.
 
-.. function:: logbook(\*widgets)
+.. function:: highlight_position(where, play_sound, color)
 
-   Shows a logbook entry and opens the logbook after *delay* seconds.
+   Highlights a position on the minimap.
+   where: (x, y) coordinate tuple
+   color is a optional parameter that defines the color of the highlight.
 
-   
-   
+.. function:: logbook(\*parameters)
 
-   Check widgets.logbook.add_captainslog_entry() for widget documentation.
-   
+   Shows a logbook entry and opens the logbook after some seconds.
+   Displays a YAML-defined notification message on logbook close.
+
+   See widgets.logbook:add_captainslog_entry for parameter documentation.
 
 .. function:: lose()
 
    The player fails the current scenario.
 
-.. function:: message(\*messages)
+.. function:: message(type, \*messages )
 
-   Shows a message with custom text in the messagewidget. *messages* is a list of message texts.
-   If it contains more than one message, they are shown after each other, delayed in time.
-   Custom messages are translated if and only if the scenario author requested translations.
+   Shows a message with custom text in the messagewidget.
+   If you pass more than one message, they are shown simultaneously.
 
 .. function:: set_var(variable, value)
 
-   Assigns the value *value* to the scenario variable *variable*.
-   Overwrites the current value of *variable*.
+   Assigns values to scenario variables. Overwrites previous assignments to the same variable.
 
 .. function:: spawn_ships(owner_id, ship_id, number, \*position )
 
-   
-   Creates a *number* of *ship_id* type ships controlled by the player
-   with world id *owner_id* around the map position *position*.
+   Creates a number of ships controlled by a certain player around a position on the map.
 
 
 
 
-   
 
 .. function:: wait(seconds)
 
-   Postpones any other scenario event for *seconds* seconds.
+   Postpones any other scenario events for a certain amount of seconds.
 
 .. function:: win()
 
-   The player wins the current scenario. If part of a campaign, offers to start the next scenario.
+   The player wins the current scenario.
 
 Conditions
 ----------
+.. function:: building_in_range(building_class1, building_class2)
+
+   Checks whether there is a building_class2 in range of a building_class1.
+
 .. function:: building_num_of_type_greater(building_class, limit)
 
    Returns whether any player settlement has more than *limit* buildings of type *building_class*.
@@ -80,6 +89,10 @@ Conditions
 
    Checks whether less than *limit* of *building_class* type buildings are
    connected to a warehouse or storage.
+
+.. function:: game_started()
+
+   Always return True. Used for one-off events
 
 .. function:: player_balance_greater(limit)
 
@@ -148,7 +161,7 @@ Conditions
 
 .. function:: settler_level_greater(limit)
 
-   Returns whether the highest increment reached in any player settlement is greater than *limit*.
+   Returns whether the highest tier reached in any player settlement is greater than *limit*.
 
 .. function:: time_passed(seconds)
 
