@@ -240,3 +240,6 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+# RTD style hack
+html_style = '/default.css'
