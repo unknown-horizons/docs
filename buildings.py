@@ -12,7 +12,7 @@ from horizons.util.loaders.actionsetloader import ActionSetLoader
 
 ActionSetLoader._find_action_sets('content/')
 
-settler_names = dict(db('SELECT level, name FROM settler_level'))
+settler_names = dict(db('SELECT level, name FROM tier'))
 unit_sets = dict((u.id, u.action_sets) for u in Entities.units.itervalues())
 SHIP_THUMBNAIL = 'content/gui/icons/units/thumbnails/{type_id}.png'
 RES_PATH = 'content/gui/icons/resources/32/{id:03d}.png'
