@@ -836,8 +836,8 @@ Produces all kinds of confectionery.
 |          |  |produces_b063|                               |
 +----------+------------------------------------------------+
 
-Vintner
-```````
+Winery
+``````
 Produces wine out of grapes.
 
 +----------+------------------------------------------------+
@@ -902,7 +902,7 @@ Produces wine out of grapes.
 .. |b2x040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_herbary0/idle_full/45/004.png
 .. |b2x041| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/butchery/as_butchery0/idle/45/0.png
 .. |b2x042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/doctor/as_doctor0/idle/45/000.png
-.. |b2x049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b2x049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_spicefield0/idle_full/45/3.png
 .. |b2x050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
 .. |b2x053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/000.png
 .. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
@@ -918,7 +918,7 @@ Produces wine out of grapes.
 .. |b3x061| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_vineyard0/idle_full/45/000.png
 .. |b3x062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_alvearies0/idle/45/013.png
 .. |b3x063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
-.. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_winery/idle/45/0.png
 .. |produces_b001| replace::
                              Produces:
                              |r019|
