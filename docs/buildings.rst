@@ -195,6 +195,17 @@ Mountain
 
 Pioneers
 ''''''''
+Warehouse
+`````````
++----------+---------------------------------------------------------+
+| |b1x001| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      5 |      0 |   1000 |     12 |      3 |      3 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b001|                                        |
++----------+---------------------------------------------------------+
+
 Storage Hut
 ```````````
 Extends stock, expands settlement range and provides collectors.
@@ -436,6 +447,19 @@ Extinguishes fires.
 |          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
 +----------+---------------------------------------------------------------------------+
 
+Brewery
+```````
+Consumes hops. Produces Beer.
+
++----------+---------------------------------------------------------------------------+
+| |b1x068| | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     10 |      0 |    250 |      2 |      2 |      4 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b068|                                                          |
++----------+---------------------------------------------------------------------------+
+
 Settlers
 ''''''''
 Warehouse
@@ -665,6 +689,7 @@ Recruits units suitable for ground combat.
 |          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
 |          | |     25 |     10 |   1000 |      6 |      4 |      8 |      3 |      3 | |
 |          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b053|                                                          |
 +----------+---------------------------------------------------------------------------+
 
 Stone Pit
@@ -708,6 +733,17 @@ Produces weapons out of iron.
 
 Citizens
 ''''''''
+Warehouse
+`````````
++----------+---------------------------------------------------------+
+| |b3x001| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      5 |      0 |   1000 |     12 |      3 |      3 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b001|                                        |
++----------+---------------------------------------------------------+
+
 Stone house
 ```````````
 Houses your inhabitants.
@@ -827,26 +863,39 @@ Pastry Shop
 ```````````
 Produces all kinds of confectionery.
 
-+----------+------------------------------------------------+
-| |b3x063| | +--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+ |
-|          | |     25 |     10 |      1 |      2 |      2 | |
-|          | +--------+--------+--------+--------+--------+ |
-|          |  |produces_b063|                               |
-+----------+------------------------------------------------+
++----------+------------------------------------------------------------------+
+| |b3x063| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     25 |     10 |    500 |      2 |      3 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b063|                                                 |
++----------+------------------------------------------------------------------+
 
 Winery
 ``````
 Produces wine out of grapes.
 
++----------+------------------------------------------------------------------+
+| |b3x065| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     20 |      5 |    500 |      2 |      3 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b065|                                                 |
++----------+------------------------------------------------------------------+
+
+Hop Field
+`````````
+Yields hop. Needs a farm.
+
 +----------+------------------------------------------------+
-| |b3x065| | +--------+--------+--------+--------+--------+ |
+| |b3x069| | +--------+--------+--------+--------+--------+ |
 |          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
 |          | +--------+--------+--------+--------+--------+ |
-|          | |     20 |      5 |      1 |      2 |      2 | |
+|          | |      0 |      0 |    150 |      3 |      3 | |
 |          | +--------+--------+--------+--------+--------+ |
-|          |  |produces_b065|                               |
+|          |  |produces_b069|                               |
 +----------+------------------------------------------------+
 
 
@@ -868,6 +917,7 @@ Produces wine out of grapes.
 .. |b0x023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_clay0/idle/45/1.png
 .. |b0x033| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_fish0/idle/45/019.png
 .. |b0x034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/mountains/as_mountain5x5/idle/45/0.png
+.. |b1x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/warehouse/as_warehouse_pioneers0/idle/45/0.png
 .. |b1x002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/storagetent/as_storagetent1/idle/45/0.png
 .. |b1x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/residential/as_hut1/idle/45/0.png
 .. |b1x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/mainsquare/as_mainsquare_wooden0/idle/45/0.png
@@ -887,6 +937,7 @@ Produces wine out of grapes.
 .. |b1x026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/distillery/as_distillery0/idle/45/0.png
 .. |b1x044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/tower_wooden/as_woodentower0/idle/45/0.png
 .. |b1x045| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/fireservice/as_fireservice0/idle/45/0.png
+.. |b1x068| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/brewery/as_brewery0/idle_full/45/000.png
 .. |b2x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/warehouse/as_warehouse_settler0/idle/45/000.png
 .. |b2x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/residential/as_house0/idle/45/0.png
 .. |b2x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/mainsquare/as_mainsquare_timberframed0/idle/45/0.png
@@ -898,27 +949,30 @@ Produces wine out of grapes.
 .. |b2x035| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/salt_ponds/as_saltponds0/idle_full/45/0.png
 .. |b2x036| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_tobaccofield0/idle_full/45/0.png
 .. |b2x037| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/tobacconist/as_tobacconist0/idle/45/0.png
-.. |b2x038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_cattlerun0/idle/45/0.png
+.. |b2x038| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_cattlerun0/idle_full/45/000.png
 .. |b2x040| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_herbary0/idle_full/45/004.png
 .. |b2x041| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/butchery/as_butchery0/idle/45/0.png
 .. |b2x042| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/doctor/as_doctor0/idle/45/000.png
 .. |b2x049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_spicefield0/idle_full/45/3.png
-.. |b2x050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b2x050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/blender/as_blender0/idle/45/0.png
 .. |b2x053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/000.png
 .. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
 .. |b2x055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
 .. |b2x066| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/weaponsmith/as_weaponsmith0/idle/45/000.png
+.. |b2x067| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/cannonfoundry/as_cannonfoundry/idle/45/0.png
+.. |b3x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/warehouse/as_warehouse_citizens0/idle/45/000.png
 .. |b3x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/residential/as_stonehouse1/idle/45/0.png
-.. |b3x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/mainsquare/as_mainsquare_stone0/idle/45/0.png
+.. |b3x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/mainsquare/as_mainsquare_stone0/idle/45/000.png
 .. |b3x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/streets/as_stone_path/abc/135/0.png
 .. |b3x046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cornfield0/idle_full/45/0.png
 .. |b3x047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_windmill0/idle_full/45/00.png
 .. |b3x048| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/bakery/as_bakery0/idle/45/000.png
-.. |b3x060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b3x060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cocoafield0/idle_full/45/0.png
 .. |b3x061| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_vineyard0/idle_full/45/000.png
 .. |b3x062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_alvearies0/idle/45/013.png
 .. |b3x063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
 .. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_winery/idle/45/0.png
+.. |b3x069| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
 .. |produces_b001| replace::
                              Produces:
                              |r019|
@@ -965,8 +1019,9 @@ Produces wine out of grapes.
                              |r046|
                              |r018|
                              |r054|
-                             |r058|
+                             |r090|
                              |r060|
+                             |r058|
                              |r031|
 .. |produces_b021| replace::
                              Produces:
@@ -1034,6 +1089,9 @@ Produces wine out of grapes.
 .. |produces_b050| replace::
                              Produces:
                              |r047|
+.. |produces_b053| replace::
+                             Produces:
+                             |r1000023|
 .. |produces_b054| replace::
                              Produces:
                              |r052|
@@ -1058,6 +1116,15 @@ Produces wine out of grapes.
 .. |produces_b066| replace::
                              Produces:
                              |r041|
+.. |produces_b067| replace::
+                             Produces:
+                             |r040|
+.. |produces_b068| replace::
+                             Produces:
+                             |r091|
+.. |produces_b069| replace::
+                             Produces:
+                             |r089|
 .. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/zzz32.png
 .. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/negative32.png
 .. |r001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/001.png
@@ -1109,7 +1176,11 @@ Produces wine out of grapes.
 .. |r058| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/058.png
 .. |r059| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/059.png
 .. |r060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/060.png
+.. |r089| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/089.png
+.. |r090| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/090.png
+.. |r091| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/091.png
 .. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000001.png
 .. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000020.png
+.. |r1000023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000023.png
 .. |r980| replace:: x
 .. |r981| replace:: y
