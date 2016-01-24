@@ -972,7 +972,7 @@ Yields hop. Needs a farm.
 .. |b3x062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_alvearies0/idle/45/013.png
 .. |b3x063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
 .. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_winery/idle/45/0.png
-.. |b3x069| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
+.. |b3x069| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_hopfield/idle_full/45/0.png
 .. |produces_b001| replace::
                              Produces:
                              |r019|
