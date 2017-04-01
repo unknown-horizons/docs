@@ -904,7 +904,7 @@ Yields hop. Needs a farm.
 .. |b0x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/warehouse/as_warehouse0/idle/45/0.png
 .. |b0x002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/storagetent/as_storagetent0/idle/45/0.png
 .. |b0x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/residential/as_tent0/idle/45/0.png
-.. |b0x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/mainsquare/as_mainsquare0/idle/45/0.png
+.. |b0x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/mainsquare/as_mainsquare0/work/45/000.png
 .. |b0x005| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/sunsail/as_sunsail0/idle/45/0.png
 .. |b0x006| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/signalfire/as_signalfire0/idle/45/8.png
 .. |b0x008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/lumberjack/as_lumberjack0/idle/45/0.png
@@ -927,12 +927,12 @@ Yields hop. Needs a farm.
 .. |b1x008| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/lumberjack_barrack/as_lumberjack_barrack0/idle/45/0.png
 .. |b1x012| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/boat_builder/as_boat_builder0/idle/45/0.png
 .. |b1x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/streets/as_gravel_path/abc/135/0.png
-.. |b1x018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_pasture0/idle/45/0029.png
+.. |b1x018| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_pasture0/idle/45/000.png
 .. |b1x019| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_potatofield0/idle_full/45/0.png
 .. |b1x020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/farm/as_farm0/idle/45/0.png
 .. |b1x021| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/school/as_school0/idle/45/0.png
 .. |b1x022| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/agricultural/as_sugarfield0/idle_full/45/0.png
-.. |b1x024| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/brickyard/as_brickyard0/idle_full/45/0.png
+.. |b1x024| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/brickyard/as_brickyard0/idle/45/000.png
 .. |b1x025| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/clay_pit/as_clay_pit0/idle/45/0.png
 .. |b1x026| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/distillery/as_distillery0/idle/45/0.png
 .. |b1x044| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/tower_wooden/as_woodentower0/idle/45/0.png
@@ -956,8 +956,8 @@ Yields hop. Needs a farm.
 .. |b2x049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_spicefield0/idle_full/45/3.png
 .. |b2x050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/blender/as_blender0/idle/45/0.png
 .. |b2x053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/000.png
-.. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_3x3/idle/45/0.png
-.. |b2x055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/buildings/citizens/as_stone_pit0/idle/45/0.png
+.. |b2x055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_stonemason0/idle/45/0.png
 .. |b2x066| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/weaponsmith/as_weaponsmith0/idle/45/000.png
 .. |b2x067| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/cannonfoundry/as_cannonfoundry/idle/45/0.png
 .. |b3x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/warehouse/as_warehouse_citizens0/idle/45/000.png
@@ -965,12 +965,12 @@ Yields hop. Needs a farm.
 .. |b3x004| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/mainsquare/as_mainsquare_stone0/idle/45/000.png
 .. |b3x015| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/streets/as_stone_path/abc/135/0.png
 .. |b3x046| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cornfield0/idle_full/45/0.png
-.. |b3x047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_windmill0/idle_full/45/00.png
+.. |b3x047| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_windmill0/idle_full/45/000.png
 .. |b3x048| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/bakery/as_bakery0/idle/45/000.png
 .. |b3x060| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cocoafield0/idle_full/45/0.png
 .. |b3x061| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_vineyard0/idle_full/45/000.png
 .. |b3x062| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_alvearies0/idle/45/013.png
-.. |b3x063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b3x063| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_pastryshop0/idle/45/0.png
 .. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_winery/idle/45/0.png
 .. |b3x069| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_hopfield/idle_full/45/0.png
 .. |produces_b001| replace::
@@ -1179,8 +1179,8 @@ Yields hop. Needs a farm.
 .. |r089| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/089.png
 .. |r090| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/090.png
 .. |r091| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/091.png
-.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000001.png
-.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000020.png
-.. |r1000023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000023.png
+.. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/images/objects/ships/76/1000001.png
+.. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/images/objects/ships/76/1000020.png
+.. |r1000023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/images/objects/groundunit/groundunit.png
 .. |r980| replace:: x
 .. |r981| replace:: y
