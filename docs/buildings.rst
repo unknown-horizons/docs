@@ -956,7 +956,7 @@ Yields hop. Needs a farm.
 .. |b2x049| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/agricultural/as_spicefield0/idle_full/45/3.png
 .. |b2x050| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/blender/as_blender0/idle/45/0.png
 .. |b2x053| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/barracks/as_barracks0/idle/45/000.png
-.. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/buildings/citizens/as_stone_pit0/idle/45/0.png
+.. |b2x054| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_stone_pit0/idle/45/0.png
 .. |b2x055| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_stonemason0/idle/45/0.png
 .. |b2x066| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/weaponsmith/as_weaponsmith0/idle/45/000.png
 .. |b2x067| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/settlers/cannonfoundry/as_cannonfoundry/idle/45/0.png
