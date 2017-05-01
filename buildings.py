@@ -13,7 +13,7 @@ from horizons.util.loaders.actionsetloader import ActionSetLoader
 ActionSetLoader._find_action_sets('content/')
 
 settler_names = dict(db('SELECT level, name FROM tier'))
-unit_sets = dict((u.id, u.action_sets) for u in Entities.units.itervalues())
+unit_sets = dict((u.id, u.action_sets) for u in Entities.units.values())
 SHIP_THUMBNAIL = 'content/gui/icons/units/thumbnails/{type_id}.png'
 RES_PATH = 'content/gui/icons/resources/32/{id:03d}.png'
 
@@ -38,16 +38,16 @@ def get_image_url(building, tier=None):
 		fallback = 'abd'
 	if tier is None:
 		tier = 0
-		sets = all_sets[building.action_sets.values()[0].keys()[0]]
+		sets = all_sets[list(building.action_sets.values())[0].keys()[0]]
 	else:
-		building_sets = building.action_sets[tier].keys()
+		building_sets = list(building.action_sets[tier].keys())
 		sets = all_sets[building_sets[0]]
 		if building.id == 3 and tier == TIER.CITIZENS:
 			# Overwrite since first image has weight 0
 			sets = all_sets[building_sets[1]]
 
 	path = sets.get('idle_full', sets.get(fallback))
-	path = path[45].keys()[0]
+	path = list(path[45].keys())[0]
 	line = '.. |b{tier:1d}x{id:03d}| image:: {path}\n'.format(tier=tier, id=building.id, path=gh+path)
 	footer.add(line)
 	return '|b{tier:1d}x{id:03d}|'.format(tier=tier, id=building.id)
@@ -64,7 +64,7 @@ def get_res_icon_path(res_id):
 
 def get_building_name(b, tier):
 	if hasattr(b, '_level_specific_names'):
-		return b._level_specific_names.get(tier, b._level_specific_names.keys()[0])
+		return b._level_specific_names.get(tier, list(b._level_specific_names.keys())[0])
 	else:
 		return b.name
 
@@ -90,7 +90,7 @@ def get_building_table(b, tier):
 	return ret + '\n'
 
 def get_building_cost_list(building):
-	for r in building.costs.iterkeys():
+	for r in building.costs.keys():
 		used_res_ids.add(r)
 	building.costs[-99] = building.running_costs or 0
 	building.costs[-98] = building.running_costs_inactive or 0
@@ -111,9 +111,9 @@ def get_production_output(building):
 	if hasattr(building, 'component_templates'):
 		produced_res = set()
 		for component in building.component_templates:
-			for k, v in component.iteritems():
+			for k, v in component.items():
 				if 'ProducerComponent' in k:
-					for _, line in component[k]['productionlines'].iteritems():
+					for _, line in component[k]['productionlines'].items():
 						output = line.get('produces')
 						if output:
 							produced_res.add(output[0][0])
@@ -131,7 +131,7 @@ def generate_overview(buildings):
 	# Insert new pseudo-buildings for each tier upgrade to show all graphics.
 	# (Trail, SAILORS) will also spawn (Trail, PIONEERS) and so on.
 	# The correct name, if available, is then written during table generation.
-	buildings = [(b, tier) for b in buildings for tier in b.action_sets.keys()]
+	buildings = [(b, tier) for b in buildings for tier in list(b.action_sets.keys())]
 	buildings.sort(key=operator.itemgetter(1))
 
 	with open(os.path.join(DOCS_PATH, 'docs/buildings.rst'), 'w') as f:
@@ -159,7 +159,7 @@ def generate_overview(buildings):
 
 def main():
 	data = []
-	for b in Entities.buildings.itervalues():
+	for b in Entities.buildings.values():
 		# Hide removed buildings
 		if b.id in (BUILDINGS.PIGSTY, ):
 			continue
