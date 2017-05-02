@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Unknown Horizons'
-copyright = u'2012-2017, squiddy'
+project = 'Unknown Horizons'
+copyright = '2012-2017, squiddy'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -183,8 +183,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'UnknownHorizons.tex', u'Unknown Horizons Documentation',
-   u'squiddy', 'manual'),
+  ('index', 'UnknownHorizons.tex', 'Unknown Horizons Documentation',
+   'squiddy', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -213,8 +213,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'unknownhorizons', u'Unknown Horizons Documentation',
-     [u'squiddy'], 1)
+    ('index', 'unknownhorizons', 'Unknown Horizons Documentation',
+     ['squiddy'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'UnknownHorizons', u'Unknown Horizons Documentation',
-   u'squiddy', 'UnknownHorizons', 'One line description of project.',
+  ('index', 'UnknownHorizons', 'Unknown Horizons Documentation',
+   'squiddy', 'UnknownHorizons', 'One line description of project.',
    'Miscellaneous'),
 ]
 
