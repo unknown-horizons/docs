@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Set up paths and stuff so we can import from horizons.
 """
