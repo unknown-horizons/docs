@@ -24,7 +24,7 @@ db = horizons.main._create_main_db()
 # we also need to load entities to get access to the yaml data
 from horizons.extscheduler import ExtScheduler
 from horizons.entities import Entities
-from horizons.ext.dummy import Dummy
-ExtScheduler.create_instance(Dummy()) # sometimes needed by entities in subsequent calls
+from unittest.mock import Mock
+ExtScheduler.create_instance(Mock()) # sometimes needed by entities in subsequent calls
 Entities.load_buildings(db, load_now=True)
 Entities.load_units(load_now=True)
