@@ -33,12 +33,11 @@ all_sets = ActionSetLoader.action_sets
 
 
 def get_image_url(building, tier=None):
-	fallback = 'idle'
-	if building.id in (15, 43): # paths have different action set names
-		fallback = 'abd'
 	if tier is None:
 		tier = 0
-		sets = all_sets[list(building.action_sets.values())[0].keys()[0]]
+        #TODO: Below code is extremely ugly. Are the values and/or keys expected to 
+        # contain more elements than 1 (index 0)?
+		sets = all_sets[list(list(building.action_sets.values())[0].keys())[0]]
 	else:
 		building_sets = list(building.action_sets[tier].keys())
 		sets = all_sets[building_sets[0]]
@@ -46,8 +45,12 @@ def get_image_url(building, tier=None):
 			# Overwrite since first image has weight 0
 			sets = all_sets[building_sets[1]]
 
-	path = sets.get('idle_full', sets.get(fallback))
-	path = list(path[45].keys())[0]
+	for key in ("idle_full", "idle", "work", "abc", "abd"):
+		if sets.get(key) is not None:
+			path = sets.get(key)
+			break
+	
+	path = next(iter(path[45].keys()))
 	line = '.. |b{tier:1d}x{id:03d}| image:: {path}\n'.format(tier=tier, id=building.id, path=gh+path)
 	footer.add(line)
 	return '|b{tier:1d}x{id:03d}|'.format(tier=tier, id=building.id)
@@ -64,7 +67,7 @@ def get_res_icon_path(res_id):
 
 def get_building_name(b, tier):
 	if hasattr(b, '_level_specific_names'):
-		return b._level_specific_names.get(tier, list(b._level_specific_names.keys())[0])
+		return b._level_specific_names.get(tier, next(iter(b._level_specific_names.keys())))
 	else:
 		return b.name
 
@@ -90,7 +93,7 @@ def get_building_table(b, tier):
 	return ret + '\n'
 
 def get_building_cost_list(building):
-	for r in building.costs.keys():
+	for r in building.costs:
 		used_res_ids.add(r)
 	building.costs[-99] = building.running_costs or 0
 	building.costs[-98] = building.running_costs_inactive or 0
@@ -131,7 +134,7 @@ def generate_overview(buildings):
 	# Insert new pseudo-buildings for each tier upgrade to show all graphics.
 	# (Trail, SAILORS) will also spawn (Trail, PIONEERS) and so on.
 	# The correct name, if available, is then written during table generation.
-	buildings = [(b, tier) for b in buildings for tier in list(b.action_sets.keys())]
+	buildings = [(b, tier) for b in buildings for tier in b.action_sets]
 	buildings.sort(key=operator.itemgetter(1))
 
 	with open(os.path.join(DOCS_PATH, 'docs/buildings.rst'), 'w') as f:
@@ -160,9 +163,6 @@ def generate_overview(buildings):
 def main():
 	data = []
 	for b in Entities.buildings.values():
-		# Hide removed buildings
-		if b.id in (BUILDINGS.PIGSTY, ):
-			continue
 		data.append(b)
 
 	generate_overview(data)
