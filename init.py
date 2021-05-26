@@ -14,10 +14,10 @@ else:
 os.chdir(uh_dir)
 sys.path.insert(0, '.')
 
-from run_tests import mock_fife
+#from run_tests import mock_fife
 from run_uh import init_environment
 
-mock_fife()
+#mock_fife()
 init_environment(True)
 
 import horizons.main

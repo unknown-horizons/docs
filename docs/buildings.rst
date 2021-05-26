@@ -3,6 +3,30 @@ Buildings Overview
 
 Sailors
 '''''''
+Ambient
+```````
+Lookin fine dandelion.
+
++----------+------------------------------------------------+
+| |b0x072| | +--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+ |
+|          | |      0 |      0 |     50 |      1 |      1 | |
+|          | +--------+--------+--------+--------+--------+ |
++----------+------------------------------------------------+
+
+Wooden barrier
+``````````````
+Provides security.
+
++----------+---------------------------------------------------------+
+| |b0x071| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      0 |      0 |     10 |      1 |      1 |      1 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
++----------+---------------------------------------------------------+
+
 Clay Deposit
 ````````````
 +----------+---------------------------------------+
@@ -96,18 +120,6 @@ Mountain
 |          | |      0 |      0 |      5 |      5 | |
 |          | +--------+--------+--------+--------+ |
 +----------+---------------------------------------+
-
-Wooden barrier
-``````````````
-Provides security.
-
-+----------+---------------------------------------------------------+
-| |b0x071| | +--------+--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-|          | |      0 |      0 |     10 |      1 |      1 |      1 | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-+----------+---------------------------------------------------------+
 
 Pavilion
 ````````
@@ -217,18 +229,17 @@ Warehouse
 
 Pioneers
 ''''''''
-Brickyard
+Clay wall
 `````````
-Turns clay into bricks.
+Provides security.
 
-+----------+------------------------------------------------------------------+
-| |b1x024| | +--------+--------+--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+--------+--------+ |
-|          | |     15 |      5 |    500 |      6 |      1 |      2 |      4 | |
-|          | +--------+--------+--------+--------+--------+--------+--------+ |
-|          |  |produces_b024|                                                 |
-+----------+------------------------------------------------------------------+
++----------+---------------------------------------------------------+
+| |b1x071| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      0 |      0 |     10 |      1 |      1 |      1 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
++----------+---------------------------------------------------------+
 
 Boat Builder
 ````````````
@@ -255,6 +266,19 @@ Consumes hops. Produces Beer.
 |          | +--------+--------+--------+--------+--------+--------+--------+--------+ |
 |          |  |produces_b068|                                                          |
 +----------+---------------------------------------------------------------------------+
+
+Brickyard
+`````````
+Turns clay into bricks.
+
++----------+------------------------------------------------------------------+
+| |b1x024| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     15 |      5 |    500 |      6 |      1 |      2 |      4 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b024|                                                 |
++----------+------------------------------------------------------------------+
 
 Clay Pit
 ````````
@@ -329,18 +353,6 @@ Supplies citizens with goods. Provides community.
 |          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
 |          | +--------+--------+--------+--------+--------+--------+ |
 |          | |      0 |      0 |   1000 |      5 |      6 |      6 | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-+----------+---------------------------------------------------------+
-
-Clay wall
-`````````
-Provides security.
-
-+----------+---------------------------------------------------------+
-| |b1x071| | +--------+--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+--------+ |
-|          | |      0 |      0 |     10 |      1 |      1 |      1 | |
 |          | +--------+--------+--------+--------+--------+--------+ |
 +----------+---------------------------------------------------------+
 
@@ -754,19 +766,6 @@ Consumes flour. Produces food.
 |          |  |produces_b048|                                                 |
 +----------+------------------------------------------------------------------+
 
-Pastry Shop
-```````````
-Produces all kinds of confectionery.
-
-+----------+------------------------------------------------------------------+
-| |b3x063| | +--------+--------+--------+--------+--------+--------+--------+ |
-|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
-|          | +--------+--------+--------+--------+--------+--------+--------+ |
-|          | |     25 |     10 |    500 |      2 |      3 |      2 |      2 | |
-|          | +--------+--------+--------+--------+--------+--------+--------+ |
-|          |  |produces_b063|                                                 |
-+----------+------------------------------------------------------------------+
-
 Cannon Foundry
 ``````````````
 Produces Cannons.
@@ -791,6 +790,19 @@ Supplies citizens with goods. Provides community.
 |          | |      0 |      0 |   1000 |      5 |      6 |      6 | |
 |          | +--------+--------+--------+--------+--------+--------+ |
 +----------+---------------------------------------------------------+
+
+Pastry Shop
+```````````
+Produces all kinds of confectionery.
+
++----------+------------------------------------------------------------------+
+| |b3x063| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r007| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     25 |     10 |    500 |      2 |      3 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b063|                                                 |
++----------+------------------------------------------------------------------+
 
 Stonemason
 ``````````
@@ -958,6 +970,45 @@ Produces grapes for use in wine and confectionery. Needs a farm.
 |          |  |produces_b061|                               |
 +----------+------------------------------------------------+
 
+Merchants
+'''''''''
+Public Bath
+```````````
++----------+------------------------------------------------------------------+
+| |b4x087| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     10 |      0 |    350 |      4 |      2 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b087|                                                 |
++----------+------------------------------------------------------------------+
+
+Saline
+``````
+Brine + Charcoal = Salt
+
++----------+------------------------------------------------------------------+
+| |b4x086| | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r006| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          | |     10 |      0 |    350 |      4 |      2 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b086|                                                 |
++----------+------------------------------------------------------------------+
+
+Estate
+``````
+Houses your inhabitants.
+
++----------+---------------------------------------------------------+
+| |b4x003| | +--------+--------+--------+--------+--------+--------+ |
+|          | | |r-99| | |r-98| | |r001| | |r004| | |r980| | |r981| | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          | |      0 |      0 |    100 |      2 |      2 |      2 | |
+|          | +--------+--------+--------+--------+--------+--------+ |
+|          |  |produces_b003|                                        |
++----------+---------------------------------------------------------+
+
 
 
 
@@ -979,6 +1030,7 @@ Produces grapes for use in wine and confectionery. Needs a farm.
 .. |b0x034| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/mountains/as_mountain5x5/idle/45/0.png
 .. |b0x070| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/resources/as_stonedeposit0/idle/45/0.png
 .. |b0x071| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/sailors/wall/as_wall/abc/45/0.png
+.. |b0x072| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/terrain/ambient/as_rock0/idle/45/0.png
 .. |b1x001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/warehouse/as_warehouse_pioneers0/idle/45/0.png
 .. |b1x002| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/storagetent/as_storagetent1/idle/45/0.png
 .. |b1x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/pioneers/residential/as_hut0/idle/45/0.png
@@ -1037,6 +1089,9 @@ Produces grapes for use in wine and confectionery. Needs a farm.
 .. |b3x065| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_winery/idle/45/0.png
 .. |b3x067| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_cannonfoundry/idle_full/45/001.png
 .. |b3x069| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/citizens/as_hopfield/idle_full/45/0.png
+.. |b4x003| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/merchants/residential/as_estate0/idle/45/0.png
+.. |b4x086| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/placeholder/as_2x2/idle/45/0.png
+.. |b4x087| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gfx/buildings/merchants/as_bath/idle/45/000.png
 .. |produces_b001| replace::
                              Produces:
                              |r019|
@@ -1193,6 +1248,12 @@ Produces grapes for use in wine and confectionery. Needs a farm.
 .. |produces_b069| replace::
                              Produces:
                              |r089|
+.. |produces_b086| replace::
+                             Produces:
+                             |r029|
+.. |produces_b087| replace::
+                             Produces:
+                             |r096|
 .. |r-98| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/zzz32.png
 .. |r-99| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/negative32.png
 .. |r001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/001.png
@@ -1248,6 +1309,7 @@ Produces grapes for use in wine and confectionery. Needs a farm.
 .. |r089| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/089.png
 .. |r090| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/090.png
 .. |r091| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/091.png
+.. |r096| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/resources/32/096.png
 .. |r1000001| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000001.png
 .. |r1000020| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000020.png
 .. |r1000023| image:: https://github.com/unknown-horizons/unknown-horizons/raw/master/content/gui/icons/units/thumbnails/1000023.png
